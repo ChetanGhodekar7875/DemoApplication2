@@ -1,15 +1,13 @@
 package Base;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
 
-public class BaseClass {
+public class BaseClassTest {
 
-	@Parameters("bName")
-	@BeforeClass
+
+	@Test
 	public void launchApplication(String bName) {
 		WebDriver webDriver;
 		if(bName.equals("Chrome")) {
