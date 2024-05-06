@@ -4,22 +4,13 @@ import org.testng.annotations.Test;
 
 
 
-public class BaseClassTest {
+public class BaseClassTest extends BeforeClassTest{
 
 
-	@Test
-	public void launchApplication(String bName) {
-		WebDriver webDriver;
-		if(bName.equals("Chrome")) {
-			System.out.println("CHROME");
-		}else {
-			System.out.println("DEFAULT BROWSER");
-		}
-	}
 	
 	@Test
 	public void test() {
-		System.out.println("TEST METHID");
+		System.out.println("TEST METHOD");
 	}
 	
 }
